@@ -85,11 +85,6 @@ export default function Home() {
                   {item.buzzer_status  == 0 ? "Buzzer ON" : "Buzzer OFF"}
                 </Button>
               </div>
-              <div className="flex justify-center w-full items-center">
-                <Button variant={item.switch_status == 0 ? "destructive" : "default"} className="rounded-full w-20 h-20 m-5" onClick={() => switchaction(item.switch_status == 0 ? 1 : 0)}>
-                  {item.switch_status == 0 ? "ON" : "OFF"}
-                </Button>
-              </div>
             </CardContent>
           </Card>
         ))}
